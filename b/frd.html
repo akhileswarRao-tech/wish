@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Birthday!</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <style>
+        body {
+            background: linear-gradient(120deg, #f6d365 0%, #fda085 100%);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            font-family: 'Arial', sans-serif;
+            color: #fff;
+            text-align: center;
+        }
+        .container {
+            background: rgba(0, 0, 0, 0.5);
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+        }
+        h1 {
+            font-size: 3em;
+            margin-bottom: 20px;
+        }
+        p {
+            font-size: 1.5em;
+            margin-bottom: 30px;
+        }
+        .btn {
+            margin: 5px;
+            padding: 10px 20px;
+            border-radius: 50px;
+            font-size: 1.2em;
+        }
+        .balloons {
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            opacity: 0.8;
+        }
+        .balloon {
+            width: 100px;
+            animation: float 6s ease-in-out infinite;
+        }
+        .balloon:nth-child(2) {
+            animation-duration: 7s;
+        }
+        .balloon:nth-child(3) {
+            animation-duration: 8s;
+        }
+        @keyframes float {
+            0% { transform: translateY(0); }
+            50% { transform: translateY(-20px); }
+            100% { transform: translateY(0); }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>Happy Birthday, [Friend's Name]!</h1>
+        <p>Wishing you all the joy, happiness, and love in the world. Have a fantastic day!</p>
+        <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" class="btn btn-primary">Special Birthday Song</a>
+        <a href="mikasa.jpg" class="btn btn-success">Your Surprise Gift</a>
+        <a href="https://example.com/message" class="btn btn-info">Special Message</a>
+        <a href="https://example.com/gallery" class="btn btn-warning">Memory Lane</a>
+    </div>
+
+    <div class="balloons">
+        <img src="https://i.imgur.com/r9P4kdO.png" class="balloon" alt="Balloon 1">
+        <img src="https://i.imgur.com/r9P4kdO.png" class="balloon" alt="Balloon 2">
+        <img src="https://i.imgur.com/r9P4kdO.png" class="balloon" alt="Balloon 3">
+    </div>
+
+    <!-- jQuery and Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+</body>
+</html>
